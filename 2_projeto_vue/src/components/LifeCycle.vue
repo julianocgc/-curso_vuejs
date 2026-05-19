@@ -9,6 +9,17 @@ export default{
         return {
             nome: 'Ainda não sei'
         }
+    },
+    created(){
+        setTimeout(() => {
+                this.nome = 'Vitor'
+        }, 1000);
+    
+    },
+    mounted(){
+        setTimeout(() => {
+                this.nome = 'Pedro'
+        }, 2000);
     }
 }
 
